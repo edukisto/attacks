@@ -1,0 +1,5 @@
+*      text=auto           eol=lf   whitespace=tab-in-indent,tabwidth=4
+*.bat                      eol=crlf
+*.css            diff=css
+*.html           diff=html
+*.php            diff=php
