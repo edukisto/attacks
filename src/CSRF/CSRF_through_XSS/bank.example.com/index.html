@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru-luna1918">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        >
+    <title>Денежный перевод</title>
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+        >
+</head>
+<body>
+    <main class="container">
+        <h1>Денежный перевод</h1>
+
+        <form action="transfer.php" method="post">
+            <div class="form-group">
+                <label for="account">Номер счёта получателя</label>
+
+                <input
+                    class="form-control"
+                    id="account"
+                    min="1"
+                    name="account"
+                    placeholder="Введите номер счёта получателя"
+                    required
+                    step="1"
+                    type="number"
+                    value="260602"
+                    >
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Сумма перевода, ₽</label>
+
+                <input
+                    class="form-control"
+                    id="amount"
+                    min="0.01"
+                    name="amount"
+                    placeholder="Введите сумму перевода"
+                    required
+                    step="0.01"
+                    type="number"
+                    value="1337.99"
+                    >
+            </div>
+
+            <input class="btn btn-block btn-primary" type="submit">
+        </form>
+    </main>
+</body>
+</html>
