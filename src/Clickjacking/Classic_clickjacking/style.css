@@ -1,0 +1,27 @@
+body {
+    font-size: 14px;
+}
+
+button {
+    font-family: monospace;
+}
+
+iframe {
+    border: none; /* Без окантовки. */
+    height: 3.5rem;
+    left: 50%;
+    opacity: 0; /* Прозрачный, но не скрытый, как при display: none. */
+    position: absolute; /* Позиция по осям X и Y задана разработчиком. */
+    top: -0.5rem;
+    transform: translate(-50%, 0);
+    width: 9rem;
+    z-index: 2147483647; /* На ближайшей к пользователю позиции по оси Z. */
+}
+
+.bg-dark {
+    overflow: hidden; /* Без полос прокрутки (scrollbar’ов). */
+}
+
+.form-group {
+    position: relative;
+}
