@@ -1,0 +1,17 @@
+h1 a,
+h1 a:active,
+h1 a:hover,
+h1 a:link,
+h1 a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 span {
+    color: #f00;
+}
+
+iframe {
+    background: #fff;
+    width: 75%;
+}
