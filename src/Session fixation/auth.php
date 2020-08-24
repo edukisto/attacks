@@ -2,6 +2,9 @@
 // Начать или возобновить (по session ID) сессию.
 session_start();
 
+// Раскомментируйте следующую строку для защиты от фиксации сессии.
+//session_regenerate_id();
+
 require_once 'get_session_info.php';
 
 echo '<h1>Результат аутентификации</h1>';
